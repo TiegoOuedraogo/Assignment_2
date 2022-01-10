@@ -1,15 +1,10 @@
 const arr = ["a", , "c"];
-const myKey = (array, callback) => {
-  let newKey = [];
-  for (let i = 0; i < array.lenght; i++) {
-      console.log(array)
-    newKey.push(callback(i));
+const myKey = (array) => {
+  let keys = [];
+  for (let i = 0; i < array.length; i++) {
+      
+    keys.push(i);
   }
-  return newKey;
+  return keys;
 };
-
-console.log(
-  myKey(arr, (element) => {
-    return element;
-  })
-);
+console.log(myKey(arr))
