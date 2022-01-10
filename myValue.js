@@ -1,16 +1,14 @@
 var arr = ["a", "b", "c", "d", "e"];
-const myValue = (letter , callback) => {
-  let newLetters = [];
+const myValue = (array) => {
+  let values = [];
 
-  for (let i = 0; i < letter.length; i++) {
-    newLetters.push(callback(letter[i]));
+  for (let i = 0; i < array.length; i++) {
+    values.push(array[i]);
   }
 
-  return newLetters;
+  return values;
 };
 
 console.log(
-  myValue(arr, (element) => {
-    return element;
-  })
+  myValue(arr)
 );
