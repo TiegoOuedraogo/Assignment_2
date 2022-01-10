@@ -18,9 +18,9 @@ const myFilter1 = (arr,callback) => {
 };
 //test the function myFilter1
 console.log(
-  myFilter1(words,(element) => {
-    return element.length <= 6;
-  }, words)
+  myFilter1(words,(element) => 
+     element.length <= 6)
+
 );
 
 const myFilter = (array,callback)=>{
@@ -35,4 +35,4 @@ const myFilter = (array,callback)=>{
 }
 //test the function myFilter
 const numbers =[1,2,3,4,5]
-console.log(myFilter(numbers,(element)=>{return  element > 2}))
+console.log(myFilter(numbers,(element)=> element > 2))

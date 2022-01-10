@@ -1,10 +1,9 @@
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
-const myFruits = (callback,arr)=>{
-  let new_Fruits =["Kiwi", "Lemon", "Pineapple"];
-  for(let i=0; i < arr.length;i++){
-    new_Fruits.push(callback(arr[i]))
-  }
-return new_Fruits;
+const myPush = (arr,items)=>{
+  
+  arr[arr.length]=items
+return arr.length;
 }
 //fruits.push;
-console.log(myFruits((element)=>{return element},fruits))
+console.log("the new length is: ",myPush(fruits,"peaches"))
+console.log(fruits)
